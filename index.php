@@ -19,13 +19,13 @@ require_once __DIR__."\Database\db.php";
   <?php
   echo
     "<pre>
-      ".var_dump($movie_1)."
+      ".var_dump($movies['movie_1'])."
       <br>
-      ".var_dump($movie_2)."
+      ".var_dump($movies['movie_2'])."
       Versione che sfrutta il method getOverview:
-      ".$movie_1->getOverview()."
+      ".$movies['movie_1']->getOverview()."
       <br>
-      ".$movie_2->getOverview()."
+      ".$movies['movie_2']->getOverview()."
     </pre>"
   ?>
 </body>
