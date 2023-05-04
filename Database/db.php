@@ -11,6 +11,6 @@ $movies_genres = [
 ];
 
 $movies = [
-  'movie_1' => new Movie("Dungeons & Dragons - L'onore dei ladri","IT",$movies_genres['movie_1'],"2023","movie_1_poster_link", 3.5 ,$movies_plots['movie_1']), 
-  'movie_2' => new Movie("V per Vendetta","IT",$movies_genres['movie_2'],"2006","movie_2_poster_link", 4.5, $movies_plots['movie_2']),
+  'movie_1' => new Movie("Dungeons & Dragons - L'onore dei ladri","IT",$movies_genres['movie_1'],"2023","img/d&d.jpg", 3.5 ,$movies_plots['movie_1']), 
+  'movie_2' => new Movie("V per Vendetta","IT",$movies_genres['movie_2'],"2006","img/vendetta.jpg", 4.5, $movies_plots['movie_2']),
 ];

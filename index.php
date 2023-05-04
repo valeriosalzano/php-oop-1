@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__."\Models\Movie.php";
-require_once __DIR__."\Database\db.php";
+require_once __DIR__."/Models/Movie.php";
+require_once __DIR__."/Database/db.php";
 
 ?>
 
@@ -24,25 +24,30 @@ require_once __DIR__."\Database\db.php";
   
     <main>
       
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
       
       <?php 
       foreach ($movies as $key => $movie) {?>
 
         <div class="col">
-          <div class="card h-100 p-3">
+          <div class="card h-100 p-1 p-md-2 p-lg-3">
             <img src="<?php echo $movie->poster ?>" class="card-img-to" alt="<?php echo "poster $movie->title " ?>">
             <div class="card-body">
-              <h5 class="card-title"><?php echo $movie->title ?></h5>
+              <h5 class="card-title fw-semibold fs-3"><?php echo $movie->title ?></h5>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><?php echo "Lingua: $movie->language" ?></li>
-              <li class="list-group-item"><?php echo "Generi: ".join(', ',$movie->genres) ?></li>
-              <li class="list-group-item"><?php echo "Anno: $movie->release_year" ?></li>
-              <li class="list-group-item"><?php echo "Media voti: $movie->vote_avg" ?></li>
+              <li class="list-group-item">
+                <strong>Lingua</strong>: <?php echo $movie->language ?></li>
+              <li class="list-group-item">
+                <strong>Generi</strong>: <?php echo join(', ',$movie->genres) ?></li>
+              <li class="list-group-item">
+                <strong>Anno</strong>: <?php echo $movie->release_year ?></li>
+              <li class="list-group-item">
+                <strong>Media voti</strong>: <?php echo $movie->vote_avg ?></li>
             </ul>
             <div class="card-body">
-              <p class="card-text"><?php echo $movie->plot ?></p>
+              <p class="card-text">
+               <strong>Trama</strong>: <?php echo $movie->plot?></p>
             </div>
           </div>
         </div>
