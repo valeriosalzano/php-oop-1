@@ -1,8 +1,8 @@
 <?php
 
 $movies_plots = [
-  'movie_1' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis minima, sint ut accusamus reprehenderit debitis error quasi laborum vero nobis in eum quam eveniet aspernatur repudiandae asperiores recusandae neque.",
-  'movie_2' => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, sit a atque excepturi ipsam quam dolore minima aperiam totam asperiores consequatur ad fuga doloremque illo rem repellat libero nemo laborum."
+  'movie_1' => "Un affascinante ladro e un gruppo di improbabili avventurieri realizzano il colpo del secolo recuperando una reliquia perduta. Ma le cose si mettono male quando il gruppo si imbatte nelle persone sbagliate.",
+  'movie_2' => "In un'Inghilterra scampata alla guerra nucleare e oppressa da una dittatura poliziesca, una giovane donna, Evey viene salvata da un uomo dal volto coperto da una maschera. Il suo nome è V, vuole vendicarsi di coloro che l'hanno internato in un campo di concentramento e l'hanno sottoposto a crudeli esperimenti medici; inizia così la sua rivolta contro il potere, cercando di sollevare i suoi concittadini contro la tirannia. Scoperta la verità sul passato di V, Evey trova in sè stessa una nuova forza e diventa un'alleata nel piano dell'uomo per ristabilire la libertà."
 ];
 
 $movies_genres = [

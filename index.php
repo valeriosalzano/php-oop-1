@@ -16,7 +16,7 @@ require_once __DIR__."/Database/db.php";
   <title>PHP-OOP</title>
 </head>
 
-<body class="text-bg-dark">
+<body class="text-white bg-black">
   <div class="container">
     <header class="py-5">
       <h1 class="display-1 text-center fw-semibold"> PHP - OOP </h1>
@@ -30,24 +30,27 @@ require_once __DIR__."/Database/db.php";
       foreach ($movies as $key => $movie) {?>
 
         <div class="col">
-          <div class="card h-100 p-1 p-md-2 p-lg-3">
+          <div class="card h-100 p-1 p-md-2 p-lg-3 text-bg-dark">
             <img src="<?php echo $movie->poster ?>" class="card-img-to" alt="<?php echo "poster $movie->title " ?>">
             <div class="card-body">
-              <h5 class="card-title fw-semibold fs-3"><?php echo $movie->title ?></h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <strong>Lingua</strong>: <?php echo $movie->language ?></li>
-              <li class="list-group-item">
-                <strong>Generi</strong>: <?php echo join(', ',$movie->genres) ?></li>
-              <li class="list-group-item">
-                <strong>Anno</strong>: <?php echo $movie->release_year ?></li>
-              <li class="list-group-item">
-                <strong>Media voti</strong>: <?php echo $movie->vote_avg ?></li>
-            </ul>
-            <div class="card-body">
-              <p class="card-text">
-               <strong>Trama</strong>: <?php echo $movie->plot?></p>
+              <h5 class="card-title fw-semibold fs-3 my-3"><?php echo $movie->title ?></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-bg-dark">
+                  <strong>Lingua</strong>: <?php echo $movie->language ?>
+                </li>
+                <li class="list-group-item text-bg-dark">
+                  <strong>Generi</strong>: <?php echo join(', ',$movie->genres) ?>
+                </li>
+                <li class="list-group-item text-bg-dark">
+                  <strong>Anno</strong>: <?php echo $movie->release_year ?>
+                </li>
+                <li class="list-group-item text-bg-dark">
+                  <strong>Media voti</strong>: <?php echo $movie->vote_avg ?>
+                </li>
+                <li class="list-group-item text-bg-dark">
+                  <strong>Trama</strong>: <?php echo $movie->plot?>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
